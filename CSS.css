@@ -1,0 +1,93 @@
+/* Resetting some default styles for consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Black text color */
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+    background-color: #2ecc71; /* Green header background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: #333; /* Black navbar background */
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f39c12; /* Orange on hover */
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #f39c12; /* Orange sidebar background */
+    padding: 20px;
+    color: #fff;
+}
+
+.main {
+    width: 70%;
+}
+
+/* Article Styles */
+.article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.article h2 {
+    color: #2ecc71; /* Green heading color */
+}
+
+/* Footer Styles */
+.footer {
+    clear: both;
+    background-color: #333; /* Black footer background */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .sidebar, .main {
+        width: 100%;
+    }
